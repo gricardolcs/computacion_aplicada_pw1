@@ -46,7 +46,16 @@ El proyecto consistió en el despliegue, actualización, configuración y securi
       netmask 255.255.255.0
       gateway 192.168.1.1
 
-4. Almacenamiento y ParticionamientoSe añadió un segundo disco virtual de 10 GB y se crearon dos particiones estándar (tipo 83):/www_dir (3 GB): Configurado en 000-default.conf como nuevo DocumentRoot para alojar la web (index.php y logo.png)./backup_dir (6 GB): Destinado exclusivamente a almacenar los respaldos comprimidos.Ambas particiones fueron configuradas en /etc/fstab para montarse automáticamente durante el arranque del sistema.Persistencia de particiones: Se creó la regla @reboot cat /proc/partitions > /opt/particion en Crontab para almacenar el estado de las particiones cargadas por el kernel en el directorio /opt.5. Automatización de BackupsSe desarrolló el script ejecutable /opt/scripts/backup_full.sh con el siguiente funcionamiento:Acepta parámetros de origen ($1) y destino ($2).Incluye la opción -help para desplegar la ayuda interactiva al usuario.Valida la disponibilidad y montaje de los sistemas de archivos de origen y destino antes de ejecutar la compresión.Genera los archivos en formato .tar.gz utilizando la fecha actual en formato ANSI (YYYYMMDD).Tareas Programadas (crontab)Bash# Carga de reglas de firewall al inicio
+4. Almacenamiento y ParticionamientoSe añadió un segundo disco virtual de 10 GB y se crearon dos particiones estándar (tipo 83):/www_dir (3 GB):
+ 
+<img width="567" height="268" alt="image" src="https://github.com/user-attachments/assets/02806246-aeec-4c48-aa32-74cc58e8d6b2" />
+
+
+   5. Automatización de Backups
+<img width="564" height="235" alt="image" src="https://github.com/user-attachments/assets/57f803c9-82f1-482b-a6b0-b0229c474d1b" />
+
+     
+Tareas Programadas (crontab)Bash# Carga de reglas de firewall al inicio
 @reboot /usr/sbin/iptables-restore /root/myfw.txt
 
 # Backup diario de logs a las 00:00 hs
