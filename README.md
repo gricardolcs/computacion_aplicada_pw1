@@ -57,4 +57,7 @@ El proyecto consistió en el despliegue, actualización, configuración y securi
 
 # Registro de estado de particiones al inicio
 @reboot cat /proc/partitions > /opt/particion
-📁 Archivos Incluidos en este RepositorioEn cumplimiento con las consignas del trabajo práctico, se adjuntan los siguientes paquetes comprimidos con la estructura del servidor:ArchivoDescripciónroot.tar.gzCopia de seguridad del directorio /rootetc.tar.gzCopia de seguridad de los archivos de configuración en /etcopt.tar.gzScripts de backup y archivos almacenados en /optwww_dir.tar.gzArchivos fuente del servidor web ubicados en /www_dirbackup_dir.tar.gzContenido del directorio de respaldos en /backup_dirvar.tar.gzDirectorio /var dividido en volúmenes pequeños para el repositorio
+📁 Archivos Incluidos en este RepositorioEn cumplimiento con las consignas del trabajo práctico, se adjuntan los siguientes paquetes comprimidos con la estructura del servidor:
+ 
+<img width="623" height="412" alt="image" src="https://github.com/user-attachments/assets/4edfcc43-be71-43a0-8e37-f55343b58227" />
+
