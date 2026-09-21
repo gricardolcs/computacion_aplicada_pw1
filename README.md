@@ -4,16 +4,16 @@ Este repositorio contiene la entrega y documentación técnica correspondiente a
 
 ---
 
-## 👥 Integrantes del Grupo
+##  Integrantes del Grupo
 * **R. Gonzalez** ([@gricardolcs](https://github.com/gricardolcs))
 
 ---
 
-## 📋 Resumen del Proyecto
+##  Resumen del Proyecto
 
 El proyecto consistió en el despliegue, actualización, configuración y securización de un entorno de servidor basado en **GNU/Linux Debian**, ejecutado sobre una máquina virtual en Oracle VirtualBox. 
 
-### 🧰 Ficha Técnica del Servidor
+###  Ficha Técnica del Servidor
 * **Hostname:** `TPServer`
 * **Sistema Operativo:** Debian 12 (Bookworm)
 * **IP Estática:** `192.168.1.100/24`
@@ -22,7 +22,7 @@ El proyecto consistió en el despliegue, actualización, configuración y securi
 
 ---
 
-## 🛠️ Configuración e Implementación Realizada
+##  Configuración e Implementación Realizada
 
 ### 1. Configuración del Entorno y Sistema Operativo
 * **Recuperación y Blanqueo de Root:** Se obtuvo acceso root editando los parámetros de arranque en GRUB (`init=/bin/bash`) y modificando la contraseña del superusuario a `palermo` mediante el comando `passwd`.
@@ -66,7 +66,7 @@ Tareas Programadas (crontab)Bash# Carga de reglas de firewall al inicio
 
 # Registro de estado de particiones al inicio
 @reboot cat /proc/partitions > /opt/particion
-📁 Archivos Incluidos en este RepositorioEn cumplimiento con las consignas del trabajo práctico, se adjuntan los siguientes paquetes comprimidos con la estructura del servidor:
+ Archivos Incluidos en este RepositorioEn cumplimiento con las consignas del trabajo práctico, se adjuntan los siguientes paquetes comprimidos con la estructura del servidor:
  
 <img width="623" height="412" alt="image" src="https://github.com/user-attachments/assets/4edfcc43-be71-43a0-8e37-f55343b58227" />
 
