@@ -5,8 +5,11 @@ Este repositorio contiene la entrega y documentación técnica correspondiente a
 ---
 
 ##  Integrantes del Grupo
-* **R. Gonzalez** ([@gricardolcs](https://github.com/gricardolcs))
-* **A. Geslin** ([@AxelGes](https://github.com/AxelGes))
+* **Ricardo Gonzalez** ([@gricardolcs](https://github.com/gricardolcs))
+* **Axel Geslin** ([@AxelGes](https://github.com/AxelGes))
+* **Rodrigo Alberto Leiva**
+* **Emiliano Veron**
+* **Ismael Martinez**
 
 ---
 
